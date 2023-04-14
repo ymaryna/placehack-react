@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.home h1 {
+    font-size: 3.5rem !important;
+    color: white;
+    font-weight: 800!important;
+    max-width: 700px;
+    text-align: center;
+}
+
+.home h4 {
+    color: white;
+    text-align: center;
+    font-size: 1.15rem !important;
+    font-weight: 300 !important;
+}
+
+hr.divider {
+    border: 1px solid #f4623a;
+    opacity: 1;
+    width: 100px;
+}
+
+.home {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav.nav-bar {
+    position: fixed;
+    top: 0;
+    background-color: transparent;
+    width: 100%;
+    transition: 0.5s;
+}
+
+nav.nav-bar.active {
+    background-color: #f4623a;
+    transition: 1s;
+}
+
+nav.nav-bar.active h2 {
+    color: white !important;
+    transition: 0.5s;
+}
+
+nav.nav-bar h2 {
+    color: #ffffff8f;
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: #f4623a !important;
+    border-color: #f4623a !important;
+}
+
+.buttons {
+    width: 300px;
+    margin-top: 1rem;
+}
+
+.buttons button, .btn-random {
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+}
+.modal-dialog {
+    max-width: 670px !important;
+}
+
+.modal-header {
+    border-bottom: 0 !important;
+}
+
+.modal-footer {
+    border-top: 0 !important;
+}
+
+.modal h4 {
+    font-weight: 700;
+    margin: auto;
+    text-align: center;
+    color: #f4623a;
+}
+
+.modal p {
+    text-align: center;
+}
+
+.modal h6 {
+    color: rgb(82, 82, 82);
+    margin-bottom: 1rem;
+}
+
+/*  CHECKBOX  */
+.input-box {
+    border: 1px solid #d9d9d9;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.input-box .preferences-list .preference {
+    margin-right: 1rem;
+}
+
+.input-category {
+    position: absolute;
+    visibility: hidden;
+}
+
+.filter-card {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    align-items: center;
+    color: grey;
+    cursor: pointer;
+    transition: 0.1s;
+    border: 1px solid #dadada;
+    background-color: rgba(0, 0, 0, 0.009);
+    border-radius: 4px;
+}
+
+.filter-card.disabled {
+    background-color: #dddddd;
+}
+
+.filter-card:hover {
+    color: black;
+    outline: 4px solid #f4623a !important;
+    background-color: white;
+}
+
+.filter-selected,
+.filter-selected:hover {
+  background-color: #f4623a !important;
+  color: white !important;
+  outline: 0px solid #f4623a !important;
+  transition: 0.17s;
+  border: 1px solid #f4623a;
+}
+
+.button-submit {
+    float: right;
+}
+
+/*.Europe, .America {
+    position: relative;
+    width: 27px;
+    height: 27px;
+    border: 1px solid #c8ccd4;
+    border-radius: 3px;
+    vertical-align: middle;
+    transition: background 0.1s ease;
+    cursor: pointer;
+    display: block;
+   }
+   
+   .Europe:after, .America:after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 8px;
+    width: 7px;
+    height: 14px;
+    opacity: 0;
+    transform: rotate(45deg) scale(0);
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transition: all 0.3s ease;
+    transition-delay: 0.15s;
+   }
+   
+   .lbl {
+    margin-left: 5px;
+    vertical-align: middle;
+    cursor: pointer;
+   }
+   
+   #Europe:checked ~ .Europe, #America:checked ~ .America {
+    border-color: transparent;
+    background: #f4623a;
+    animation: jelly 0.6s ease;
+   }
+   
+   #Europe:checked ~ .Europe:after,  #America:checked ~ .America:after {
+    opacity: 1;
+    transform: rotate(45deg) scale(1);
+   }
+   
+   .cntr {
+    position: relative;
+   }
+   
+   @keyframes jelly {
+    from {
+     transform: scale(1, 1);
+    }
+   
+    30% {
+     transform: scale(1.25, 0.75);
+    }
+   
+    40% {
+     transform: scale(0.75, 1.25);
+    }
+   
+    50% {
+     transform: scale(1.15, 0.85);
+    }
+   
+    65% {
+     transform: scale(0.95, 1.05);
+    }
+   
+    75% {
+     transform: scale(1.05, 0.95);
+    }
+   
+    to {
+     transform: scale(1, 1);
+    }
+   }
+   
+   .hidden-xs-up {
+    display: none!important;
+   }
+*/
+
+/* CHECKBOX */   
+
+@media (max-width: 425px) {
+    .home h1 {
+        font-size: 2.5rem !important;
+    }
+
+    .preferences-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .input-box .preferences-list .preference {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+}
